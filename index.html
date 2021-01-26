@@ -85,6 +85,60 @@
 				<script>printCreatureList();</script>
 			</table>
 		</div>
+		<div class="col-md-4">
+			<table class="table table-hover table-dark">
+				<thead>
+					<tr class="text-center">
+						<th colspan=5>Enemy Status</th>
+					</tr>
+					<tr>
+						<th scope="col">Name</th>
+						<th><button id='c1Name' type="button" class="btn btn-danger">Danger</button></th>
+						<th><button id='c2Name' type="button" class="btn btn-danger">Danger</button></th>
+						<th><button id='c3Name' type="button" class="btn btn-danger">Danger</button></th>
+						<th><button id='c4Name' type="button" class="btn btn-danger">Danger</button></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Level</th>
+						<td id="c1Level"></td>
+						<td id="c2Level"></td>
+						<td id="c3Level"></td>
+						<td id="c4Level"></td>
+					</tr>
+					<tr>
+						<th>Strength</th>
+						<td id="c1Strength"></td>
+						<td id="c2Strength"></td>
+						<td id="c3Strength"></td>
+						<td id="c4Strength"></td>
+					</tr>
+					<tr>
+						<th>Speed</th>
+						<td id="c1Speed"></td>
+						<td id="c2Speed"></td>
+						<td id="c3Speed"></td>
+						<td id="c4Speed"></td>
+					</tr>
+					<tr>
+						<th>Armor</th>
+						<td id="c1Armor"></td>
+						<td id="c2Armor"></td>
+						<td id="c3Armor"></td>
+						<td id="c4Armor"></td>
+					</tr>
+					<tr>
+						<th>HP</th>
+						<td id="c1HP"></td>
+						<td id="c2HP"></td>
+						<td id="c3HP"></td>
+						<td id="c4HP"></td>
+					</tr>
+				</tbody>
+				<script>fillCreatureTable()</script>
+			</table>
+		</div>
 	</div>
 
 	<!-- Optional JavaScript; choose one of the two! -->
