@@ -11,6 +11,7 @@
 
 	<script type="text/javascript" src="heroCreation.js"></script>
 	<script type="text/javascript" src="creatureCreation.js"></script>
+	<script type="text/javascript" src="party.js"></script>
 	<!-- CSS file -->
 	<link rel=StyleSheet href="custom.css" type="text/css">
 	<title>Fantasy RPG</title>
@@ -80,6 +81,12 @@
 						<td id="rangerMana"></td>
 						<td id="wizardMana"></td>
 					</tr>
+					<tr>
+						<th>Basic Attack</th>
+						<td><button id="warriorWeapon" onclick="heroBasicAttack(0)" type="button" class="btn btn-primary"></button></td>
+						<td><button id="rangerWeapon" onclick="heroBasicAttack(1)" type="button" class="btn btn-primary"></button></td>
+						<td><button id="wizardWeapon" onclick="heroBasicAttack(2)" type="button" class="btn btn-primary"></button></td>
+					</tr>
 				</tbody>
 				<script>fillHeroTable();</script>
 				<script>printCreatureList();</script>
@@ -93,10 +100,10 @@
 					</tr>
 					<tr>
 						<th scope="col">Name</th>
-						<th><button id='c1Name' type="button" class="btn btn-danger">Danger</button></th>
-						<th><button id='c2Name' type="button" class="btn btn-danger">Danger</button></th>
-						<th><button id='c3Name' type="button" class="btn btn-danger">Danger</button></th>
-						<th><button id='c4Name' type="button" class="btn btn-danger">Danger</button></th>
+						<th><button id='c1Name' onclick="targetEnemy(0)" type="button" class="btn btn-danger">Danger</button></th>
+						<th><button id='c2Name' onclick="targetEnemy(1)" type="button" class="btn btn-danger">Danger</button></th>
+						<th><button id='c3Name' onclick="targetEnemy(2)" type="button" class="btn btn-danger">Danger</button></th>
+						<th><button id='c4Name' onclick="targetEnemy(3)" type="button" class="btn btn-danger">Danger</button></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -137,6 +144,7 @@
 					</tr>
 				</tbody>
 				<script>fillCreatureTable()</script>
+				<script>toggleAttacking()</script>
 			</table>
 		</div>
 	</div>

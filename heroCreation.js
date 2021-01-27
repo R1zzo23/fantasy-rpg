@@ -9,7 +9,8 @@ var warrior = {
   maxHP: 50,
   currentHP: 50,
   maxMana: 5,
-  currentMana: 5
+  currentMana: 5,
+  weapon: "Short Sword"
 };
 
 var ranger = {
@@ -23,7 +24,8 @@ var ranger = {
   maxHP: 40,
   currentHP: 40,
   maxMana: 15,
-  currentMana: 15
+  currentMana: 15,
+  weapon: "Short Bow"
 };
 
 var wizard = {
@@ -37,8 +39,14 @@ armor: 2,
 maxHP: 35,
 currentHP: 35,
 maxMana: 40,
-currentMana: 40
+currentMana: 40,
+weapon: "Staff"
 };
+
+var heroList = [];
+heroList.push(warrior);
+heroList.push(ranger);
+heroList.push(wizard);
 
 function fillHeroTable() {
   document.getElementById("warriorName").innerHTML = warrior.name;
@@ -65,4 +73,7 @@ function fillHeroTable() {
   document.getElementById("warriorMana").innerHTML = warrior.currentMana + "/" + warrior.maxMana;
   document.getElementById("rangerMana").innerHTML = ranger.currentMana + "/" + ranger.maxMana;
   document.getElementById("wizardMana").innerHTML = wizard.currentMana + "/" + wizard.maxMana;
+  document.getElementById("warriorWeapon").innerHTML = warrior.weapon;
+  document.getElementById("rangerWeapon").innerHTML = ranger.weapon;
+  document.getElementById("wizardWeapon").innerHTML = wizard.weapon;
 }
