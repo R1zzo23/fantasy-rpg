@@ -3,43 +3,48 @@ var creatureList = [];
 var wolf = {
   name: "Wolf",
   level: 1,
-  strength: 4,
-  speed: 7,
-  armor: 3,
+  strength: 7,
+  speed: 15,
+  armor: 6,
   hp: 20,
 };
 
 var goblin = {
   name: "Goblin",
   level: 1,
-  strength: 3,
-  speed: 5,
-  armor: 5,
+  strength: 7,
+  speed: 9,
+  armor: 12,
   hp: 25,
 };
 
 var troll = {
   name: "Troll",
   level: 1,
-  strength: 7,
-  speed: 1,
-  armor: 6,
+  strength: 15,
+  speed: 3,
+  armor: 13,
   hp: 50,
 };
 
 var grizzly = {
   name: "Grizzly",
   level: 2,
-  strength: 9,
-  speed: 2,
-  armor: 4,
+  strength: 18,
+  speed: 4,
+  armor: 7,
   hp: 65,
 };
 
-creatureList.push(wolf);
-creatureList.push(goblin);
-creatureList.push(troll);
-creatureList.push(grizzly);
+var creature1 = wolf;
+var creature2 = goblin;
+var creature3 = troll;
+var creature4 = grizzly;
+
+creatureList.push(creature1);
+creatureList.push(creature2);
+creatureList.push(creature3);
+creatureList.push(creature4);
 
 function printCreatureList() {
   console.log(creatureList);
