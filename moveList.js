@@ -23,7 +23,9 @@ function specialAttackHub(name) {
   else if (name === "Guided Shot") guidedShot();
   else if (name === "Fire Ball") fireBall();
 
-  heroBasicAttack(heroChosen);
+  if (heroList[heroChosen].currentMana >= manaUsed)
+    heroBasicAttack(heroChosen);
+  else alert("Not enough mana.");
 }
 
 function basic(x) {

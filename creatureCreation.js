@@ -6,7 +6,7 @@ var wolf = {
   strength: 7,
   speed: 15,
   armor: 6,
-  hp: 20,
+  hp: 15,
 };
 
 var goblin = {
@@ -15,25 +15,25 @@ var goblin = {
   strength: 7,
   speed: 9,
   armor: 12,
-  hp: 25,
+  hp: 20,
 };
 
 var troll = {
   name: "Troll",
-  level: 1,
+  level: 2,
   strength: 15,
   speed: 3,
   armor: 13,
-  hp: 50,
+  hp: 30,
 };
 
 var grizzly = {
   name: "Grizzly",
-  level: 2,
+  level: 1,
   strength: 18,
   speed: 4,
-  armor: 7,
-  hp: 65,
+  armor: 3,
+  hp: 45,
 };
 
 var creature1 = wolf;

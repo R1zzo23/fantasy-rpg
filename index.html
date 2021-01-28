@@ -13,6 +13,7 @@
 	<script type="text/javascript" src="creatureCreation.js"></script>
 	<script type="text/javascript" src="party.js"></script>
 	<script type="text/javascript" src="moveList.js"></script>
+	<script type="text/javascript" src="battleOrder.js"></script>
 	<!-- CSS file -->
 	<link rel=StyleSheet href="custom.css" type="text/css">
 	<title>Fantasy RPG</title>
@@ -152,7 +153,13 @@
 				</tbody>
 				<script>fillCreatureTable()</script>
 				<script>toggleAttacking()</script>
+				<script>createOrder()</script>
 			</table>
+		</div>
+		<div class="col-md-2">
+			<h3>Combat Order</h3>
+			<p id="combatOrder"></p>
+			<script>displayCombatOrder()</script>
 		</div>
 	</div>
 
