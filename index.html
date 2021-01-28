@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="heroCreation.js"></script>
 	<script type="text/javascript" src="creatureCreation.js"></script>
 	<script type="text/javascript" src="party.js"></script>
+	<script type="text/javascript" src="moveList.js"></script>
 	<!-- CSS file -->
 	<link rel=StyleSheet href="custom.css" type="text/css">
 	<title>Fantasy RPG</title>
@@ -20,7 +21,7 @@
 <body>
 	<div class="row">
     <div class="col-md-4">
-			<table class="table table-hover table-dark">
+			<table class="table table-dark">
 				<thead>
 					<tr class="text-center">
 						<th colspan=4>Party Status</th>
@@ -82,10 +83,16 @@
 						<td id="wizardMana"></td>
 					</tr>
 					<tr>
-						<th>Basic Attack</th>
-						<td><button id="warriorWeapon" onclick="heroBasicAttack(0)" type="button" class="btn btn-primary"></button></td>
-						<td><button id="rangerWeapon" onclick="heroBasicAttack(1)" type="button" class="btn btn-primary"></button></td>
-						<td><button id="wizardWeapon" onclick="heroBasicAttack(2)" type="button" class="btn btn-primary"></button></td>
+						<th>Basic</th>
+						<td><button id="warriorWeapon" style="width:100%" onclick="basic(0)" type="button" class="btn btn-light"></button></td>
+						<td><button id="rangerWeapon" style="width:100%" onclick="basic(1)" type="button" class="btn btn-light"></button></td>
+						<td><button id="wizardWeapon" style="width:100%" onclick="basic(2)" type="button" class="btn btn-light"></button></td>
+					</tr>
+					<tr>
+						<th>Special</th>
+						<td><button id="warriorSpecial" style="width:100%" onclick="identifySpecialMoveBeingUsed(0)" type="button" class="btn btn-warning"></button></td>
+						<td><button id="rangerSpecial" style="width:100%" onclick="identifySpecialMoveBeingUsed(1)" type="button" class="btn btn-success"></button></td>
+						<td><button id="wizardSpecial" style="width:100%" onclick="identifySpecialMoveBeingUsed(2)" type="button" class="btn btn-info"></button></td>
 					</tr>
 				</tbody>
 				<script>fillHeroTable();</script>
@@ -93,7 +100,7 @@
 			</table>
 		</div>
 		<div class="col-md-4">
-			<table class="table table-hover table-dark">
+			<table class="table table-dark">
 				<thead>
 					<tr class="text-center">
 						<th colspan=5>Enemy Status</th>
